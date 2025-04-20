@@ -1,0 +1,30 @@
+---
+title: "load_country_map"
+output: 
+  github_document:
+    md_extension: +gfm_auto_identifiers
+    preserve_yaml: true
+    toc: true
+    toc_depth: 6
+---
+
+## Introduction
+
+This script ...
+
+The script can be executed directly from R code or through the interface of [load_country_map.R in the Bon in a Box platform](load_country_map.R). This README serves as a guide for running the script directly and understanding its functionality.
+
+## Set Session Parameters
+The session parameters for input and relative output paths of the script are defined below as code. For more detailed information about each parameter, refer to the accompanying YAML file [studyarea_to_grid.yml](studyarea_to_grid.yml). This script is designed to be run in a production environment within the [Bon in a Box platform](https://github.com/GEO-BON/bon-in-a-box-pipelines), where input and output parameters are provided through a JSON file.
+
+This code uses the example input files included in the [`input folder`](input) of this repository as a reference. However, it should work for any input specified by the user. If it does not, please report the issue to debug the code.
+
+```{r eval=FALSE, echo=TRUE, results='hide', warning=FALSE, message=FALSE}
+# Set session parameters ####
+
+input<- list()
+outputFolder<- "/output/load_country_map"; dir.create(outputFolder, recursive = TRUE)
+
+input$
+
+``` 

@@ -1,0 +1,15 @@
+# Ignore any input and output directories
+**/input/*
+**/output/*
+
+# Do not ignore .gitkeep files inside folders
+!**/.gitkeep
+!**/input/lookup_corine.csv
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
