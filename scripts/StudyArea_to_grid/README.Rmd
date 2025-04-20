@@ -1,8 +1,11 @@
 ---
 title: "Study Area to grid"
-output:
-  html_document:
+output: 
+  github_document:
+    md_extension: +gfm_auto_identifiers
+    preserve_yaml: true
     toc: true
+    toc_depth: 6
 ---
 
 ## Introduction
