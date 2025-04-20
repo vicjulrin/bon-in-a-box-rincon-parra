@@ -40,7 +40,7 @@ input<- lapply(input, function(y) lapply(y, function(x)  { if (!is.null(x) && le
 if(input$type_map == "ne_countries") {
   map_country <- rnaturalearth::ne_countries(country = input$country, scale= input$scale, returnclass = "sf") %>% sf::st_transform(input$epsg) %>% sf::st_make_valid() %>% sf::st_make_valid() %>% sf::st_union() %>% sf::st_as_sf()
 } else if (input$type_map == "ne_states") {
-  map_country <- rnaturalearth::ne_states(country = input$country, scale= input$scale, returnclass = "sf") %>% sf::st_transform(input$epsg) %>% sf::st_make_valid() %>% sf::st_make_valid() %>% sf::st_union() %>% sf::st_as_sf()
+  map_country <- rnaturalearth::ne_states(country = input$country, returnclass = "sf") %>% sf::st_transform(input$epsg) %>% sf::st_make_valid() %>% sf::st_make_valid() %>% sf::st_union() %>% sf::st_as_sf()
 } 
 
 ## Adjust projection ####

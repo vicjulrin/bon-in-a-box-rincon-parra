@@ -217,5 +217,4 @@ outputs:
     description: "GeoJSON file containing the spatial boundaries of the selected country, in the chosen administrative level and projection system."
     type: application/geo+json
 references:
-- text: "rnaturalearth: World Map Data from Natural Earth [December 15, 2023].
-  doi: https://cran.r-project.org/web/packages/rnaturalearth/rnaturalearth.pdf"
+- text: "rnaturalearth: World Map Data from Natural Earth [December 15, 2023]. https://cran.r-project.org/web/packages/rnaturalearth/rnaturalearth.pdf"
