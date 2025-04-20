@@ -1,8 +1,8 @@
-# Ignorar cualquier directorio input y output
+# Ignore any input and output directories
 **/input/*
 **/output/*
 
-# No ignorar los archivos .gitkeep dentro de carpetas
+# Do not ignore .gitkeep files inside folders
 !**/.gitkeep
 !**/input/lookup_corine.csv
 
