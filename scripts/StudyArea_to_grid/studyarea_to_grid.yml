@@ -1,6 +1,6 @@
 script: studyarea_to_grid.R
-description: "This script converts the study area layer into a spatial grid (.tif representation)."
-external_link: https://github.com/vicjulrin/bon-in-a-box-rincon-parra/tree/main/scripts
+description: "This script converts a spatial study area layer into a spatial grid, represented as a `.tif` raster file"
+external_link: https://github.com/vicjulrin/bon-in-a-box-rincon-parra/tree/studyarea_to_grid/scripts/StudyArea_to_grid
 author:
   - name: Victor Julio Rincon-Parra
     identifier: https://www.researchgate.net/profile/Victor-J-Rincon-Parra
@@ -22,7 +22,7 @@ inputs:
     example: 1000
   name_layer:
     label: name_layer
-    description: name_layer
+    description: "Text name of the raster layer to be create"
     type: text
     example: "ID_grid"
 outputs:
@@ -34,17 +34,3 @@ outputs:
     label: StudyArea_vector
     description: "GeoJSON file containing the vector representation of the study area boundaries."
     type: application/geo+json
-conda:
-  channels:
-    - conda-forge
-    - r
-  dependencies:
-    - r-magrittr
-    - r-this.path
-    - r-dplyr
-    - r-data.table
-    - r-rjson
-    - r-terra
-    - r-sf
-    - r-fasterize
-    - r-raster
